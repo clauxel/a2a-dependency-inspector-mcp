@@ -1,15 +1,12 @@
-# A2A Dependency Inspector
+# A2A Dependency Inspector MCP
 
-A2A Dependency Inspector is a hosted remote MCP for A2A dependency inspector MCP.
+Paid remote MCP for A2A dependency inspector MCP, structured receipts, audit logs, and reviewer-ready evidence.
 
 Website: https://a2adependencyinspector.clauxel.com/
-Docs pattern reference: https://github.com/clauxel/MiroFish
-Primary keyword: A2A dependency inspector MCP
-Type: MCP
-Default plan: team
 MCP endpoint: https://a2adependencyinspector.clauxel.com/mcp
 Server card: https://a2adependencyinspector.clauxel.com/server-card.json
-Registry name: com.clauxel.a2adependencyinspector/a2adependencyinspector-mcp
-Tools: inspect_a2a_dependencies, extract_message_edges, detect_dependency_cycles, issue_rollout_receipt, export_dependency_log
+Docs: https://github.com/clauxel/a2a-dependency-inspector-mcp
 
-Public boundary: docs-only repository; no production source code or secrets.
+Use case: A2A dependency inspector MCP with structured receipts.
+Authentication: Bearer token required for production use.
+Tools: inspect_a2a_dependencies, extract_message_edges, detect_dependency_cycles, issue_rollout_receipt, export_dependency_log

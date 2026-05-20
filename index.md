@@ -1,0 +1,49 @@
+# A2A Dependency Inspector
+
+A2A Dependency Inspector is a hosted remote MCP for A2A dependency inspector MCP.
+
+This repository is a public documentation project for A2A Dependency Inspector. Its structure follows the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and a public-safe boundary.
+
+## Start Here
+
+- Website: https://a2adependencyinspector.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=a2adependencyinspector_public_docs&utm_content=readme_home
+- Pricing: https://a2adependencyinspector.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=a2adependencyinspector_public_docs&utm_content=readme_pricing
+- Checkout: https://a2adependencyinspector.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=a2adependencyinspector_public_docs&utm_content=readme_checkout
+- Support: support@aigeamy.com
+
+## Remote MCP
+
+- Endpoint: https://a2adependencyinspector.clauxel.com/mcp
+- Server card: https://a2adependencyinspector.clauxel.com/server-card.json
+- Registry name: `com.clauxel.a2adependencyinspector/a2adependencyinspector-mcp`
+- Tools: `inspect_a2a_dependencies`, `extract_message_edges`, `detect_dependency_cycles`, `issue_rollout_receipt`, `export_dependency_log`
+
+## Reading Order
+
+1. [Quickstart](guide/quickstart.md)
+2. [Evaluation guide](guide/evaluation.md)
+3. [Checkout and pricing](guide/checkout-and-pricing.md)
+4. [Workflow notes](features/workflow.md)
+5. [Security model](features/security-model.md)
+6. [Public link reference](reference/links.md)
+
+## Audience
+
+developer platform teams, release owners, AI engineering leads, and delivery reviewers.
+
+## Capabilities
+
+- Streamable HTTP MCP endpoint
+- Bearer-token access for production calls
+- Structured tool-call output
+- Receipt-oriented evidence export
+- Public server card and registry metadata
+- MCP tool: inspect_a2a_dependencies
+- MCP tool: extract_message_edges
+- MCP tool: detect_dependency_cycles
+- MCP tool: issue_rollout_receipt
+- MCP tool: export_dependency_log
+
+## Public-Safe Boundary
+
+This repository contains documentation only. It does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.

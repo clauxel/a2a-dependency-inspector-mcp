@@ -1,49 +1,48 @@
-# A2A Dependency Inspector
+# A2A Dependency Inspector MCP
 
-A2A Dependency Inspector is a hosted remote MCP for A2A dependency inspector MCP.
+A2A dependency inspector MCP with structured receipts.
 
-This repository is a public documentation project for A2A Dependency Inspector. Its structure follows the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and a public-safe boundary.
+Paid remote MCP for A2A dependency inspector MCP, structured receipts, audit logs, and reviewer-ready evidence.
 
-## Start Here
+## Public Endpoints
 
-- Website: https://a2adependencyinspector.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=a2adependencyinspector_public_docs&utm_content=readme_home
-- Pricing: https://a2adependencyinspector.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=a2adependencyinspector_public_docs&utm_content=readme_pricing
-- Checkout: https://a2adependencyinspector.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=a2adependencyinspector_public_docs&utm_content=readme_checkout
-- Support: support@aigeamy.com
-
-## Remote MCP
-
-- Endpoint: https://a2adependencyinspector.clauxel.com/mcp
+- Website: https://a2adependencyinspector.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
+- MCP endpoint: https://a2adependencyinspector.clauxel.com/mcp
 - Server card: https://a2adependencyinspector.clauxel.com/server-card.json
 - Registry name: `com.clauxel.a2adependencyinspector/a2adependencyinspector-mcp`
-- Tools: `inspect_a2a_dependencies`, `extract_message_edges`, `detect_dependency_cycles`, `issue_rollout_receipt`, `export_dependency_log`
 
-## Reading Order
+## Access
 
-1. [Quickstart](guide/quickstart.md)
-2. [Evaluation guide](guide/evaluation.md)
-3. [Checkout and pricing](guide/checkout-and-pricing.md)
-4. [Workflow notes](features/workflow.md)
-5. [Security model](features/security-model.md)
-6. [Public link reference](reference/links.md)
+This is a paid hosted remote MCP. Production calls require a bearer token issued from the product website.
 
-## Audience
+```http
+Authorization: Bearer <token>
+```
 
-developer platform teams, release owners, AI engineering leads, and delivery reviewers.
+Unauthenticated browser visits to `/mcp` return a clear JSON error instead of internal details.
 
-## Capabilities
+## Tools
 
-- Streamable HTTP MCP endpoint
-- Bearer-token access for production calls
-- Structured tool-call output
-- Receipt-oriented evidence export
-- Public server card and registry metadata
-- MCP tool: inspect_a2a_dependencies
-- MCP tool: extract_message_edges
-- MCP tool: detect_dependency_cycles
-- MCP tool: issue_rollout_receipt
-- MCP tool: export_dependency_log
+- `inspect_a2a_dependencies`
+- `extract_message_edges`
+- `detect_dependency_cycles`
+- `issue_rollout_receipt`
+- `export_dependency_log`
 
-## Public-Safe Boundary
+## Quick Start
 
-This repository contains documentation only. It does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.
+1. Open the website and choose a plan.
+2. Create or request an API token.
+3. Add the endpoint to an MCP client that supports Streamable HTTP remote servers.
+4. Send JSON-RPC requests with the bearer token.
+
+## Useful Links
+
+- Product page: https://a2adependencyinspector.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
+- Pricing: https://a2adependencyinspector.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605#pricing
+- Server card: https://a2adependencyinspector.clauxel.com/server-card.json
+- MCP endpoint: https://a2adependencyinspector.clauxel.com/mcp
+
+## Status
+
+This repository is a public documentation and directory-submission reference for the hosted service. It does not contain the private production source code.
